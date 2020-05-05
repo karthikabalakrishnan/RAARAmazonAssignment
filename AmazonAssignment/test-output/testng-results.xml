@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Gmail Suite" duration-ms="87661" started-at="2020-05-05T11:53:14Z" finished-at="2020-05-05T11:54:42Z">
+  <suite name="Gmail Suite" duration-ms="102221" started-at="2020-05-05T14:54:29Z" finished-at="2020-05-05T14:56:12Z">
     <groups>
     </groups>
-    <test name="amazonProductCheckout" duration-ms="87661" started-at="2020-05-05T11:53:14Z" finished-at="2020-05-05T11:54:42Z">
+    <test name="amazonProductCheckout" duration-ms="102221" started-at="2020-05-05T14:54:29Z" finished-at="2020-05-05T14:56:12Z">
       <class name="com.amazon.test.ProductCheckout">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="setup" is-config="true" duration-ms="20968" started-at="2020-05-05T17:22:53Z" finished-at="2020-05-05T17:23:14Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="setup" is-config="true" duration-ms="24284" started-at="2020-05-05T20:24:05Z" finished-at="2020-05-05T20:24:29Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testProductCheckout(java.lang.String)[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="testProductCheckout" duration-ms="86233" started-at="2020-05-05T17:23:15Z" data-provider="productType" finished-at="2020-05-05T17:24:42Z">
+        <test-method status="PASS" signature="testProductCheckout(java.lang.String)[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="testProductCheckout" duration-ms="100855" started-at="2020-05-05T20:24:31Z" data-provider="productType" finished-at="2020-05-05T20:26:12Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductCheckout -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="teardown" is-config="true" duration-ms="3147" started-at="2020-05-05T17:24:42Z" finished-at="2020-05-05T17:24:45Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="teardown" is-config="true" duration-ms="3199" started-at="2020-05-05T20:26:12Z" finished-at="2020-05-05T20:26:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

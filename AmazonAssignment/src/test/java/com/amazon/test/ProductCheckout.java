@@ -49,24 +49,19 @@ public class ProductCheckout extends BaseClass {
 	 */
 	@Test(dataProvider="productType")
 	public void testProductCheckout(String productSearchType) {
-		System.out.println(System.getProperty("user.dir"));
 		LoginPage loginPage = new LoginPage();
 		loginPage.loginToAmazon();
 		// to select the language
 		languageSelection();
 		waitForElementPresence(search);
 		ProductSearchPage searchPage = new ProductSearchPage();
-		System.out.println("Added method to read input data from excel"+productSearchType);
 		// pass product search type from data provider
 		searchPage.searchTV(productSearchType);
 		waitForElementPresence(ratings);
 
-		// Rotate the screen from default portrait to landscape
-		rotateScreen(ScreenOrientation.LANDSCAPE);
-
 		// Identify Elememt using Text usimg scroll gesture
 		ProductSearchPage productSearchPage = new ProductSearchPage();
-		String eleText = "Tulsi California Almonds 1kg";
+		String eleText = "Miltop California Almonds, 1kg";
 		String resourceId ="com.amazon.mShop.android.shopping:id/rs_search_results_root";
 		MobileElement element = productSearchPage.scrollToTheProduct(eleText,resourceId);
 		boolean response = element.isDisplayed();
@@ -74,8 +69,11 @@ public class ProductCheckout extends BaseClass {
 		LOGGER.info("Scrolled to particular product");
 
 		String searchProductName = productSearchPage.getProductText();
+		LOGGER.info("Search page title"+productSearchPage.getProductText());
 		String searchProductPrice = split(productSearchPage.getProductPrice());
 		element.click();
+		// Rotate the screen from default portrait to landscape
+		rotateScreen(ScreenOrientation.LANDSCAPE);
 		rotateScreen(ScreenOrientation.PORTRAIT);
 
 		languageSelection();
@@ -83,6 +81,7 @@ public class ProductCheckout extends BaseClass {
 		waitForElementPresence(checkoutProductName);
 		ProductDetailPage productDetailPage = new ProductDetailPage();
 		String checkoutProductName = productDetailPage.getProductTitle();
+		LOGGER.info("Product Deatils Page title"+productDetailPage.getProductTitle());
 		String[] checkoutProductPrice = productDetailPage.getProductPrice().split(" ");
 		assertEquals(searchProductName, checkoutProductName);
 		assertEquals(searchProductPrice, checkoutProductPrice[1]);

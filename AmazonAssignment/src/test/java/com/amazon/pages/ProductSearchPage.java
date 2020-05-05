@@ -49,7 +49,6 @@ public class ProductSearchPage extends BaseClass{
 	
 	/* Method to scroll to the particular element */
 	public MobileElement scrollToTheProduct(String eleText,String resourceId) {
-		//resourceId = "";
 		element = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
 				"new UiScrollable(new UiSelector().resourceId(\""+resourceId+"\")).scrollIntoView("
 						+ "new UiSelector().text(\""+eleText+"\"))"));
