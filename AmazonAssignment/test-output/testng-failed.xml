@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Gmail Suite]">
+  <parameter name="deviceName" value="Honor 6X"/>
+  <parameter name="Browser" value="Android"/>
+  <listeners>
+    <listener class-name="com.amazon.common.Listeners"/>
+  </listeners>
+  <test name="amazonProductCheckout(failed)">
+    <classes>
+      <class name="com.amazon.test.ProductCheckout">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testProductCheckout"/>
+        </methods>
+      </class> <!-- com.amazon.test.ProductCheckout -->
+    </classes>
+  </test> <!-- amazonProductCheckout(failed) -->
+</suite> <!-- Failed suite [Gmail Suite] -->

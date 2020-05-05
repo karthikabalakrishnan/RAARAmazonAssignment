@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="dk-PC" name="com.android.test.AndroidTest" tests="1" failures="0" timestamp="6 Apr 2020 11:45:17 GMT" time="68.09" errors="0">
+  <testcase name="setupTest" time="68.068" classname="com.android.test.AndroidTest"/>
+</testsuite>

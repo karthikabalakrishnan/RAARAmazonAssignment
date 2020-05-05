@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Gmail Suite" duration-ms="87661" started-at="2020-05-05T11:53:14Z" finished-at="2020-05-05T11:54:42Z">
+    <groups>
+    </groups>
+    <test name="amazonProductCheckout" duration-ms="87661" started-at="2020-05-05T11:53:14Z" finished-at="2020-05-05T11:54:42Z">
+      <class name="com.amazon.test.ProductCheckout">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="setup" is-config="true" duration-ms="20968" started-at="2020-05-05T17:22:53Z" finished-at="2020-05-05T17:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testProductCheckout(java.lang.String)[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="testProductCheckout" duration-ms="86233" started-at="2020-05-05T17:23:15Z" data-provider="productType" finished-at="2020-05-05T17:24:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1kg almond]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductCheckout -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.test.ProductCheckout@25bbe1b6]" name="teardown" is-config="true" duration-ms="3147" started-at="2020-05-05T17:24:42Z" finished-at="2020-05-05T17:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.amazon.test.ProductCheckout -->
+    </test> <!-- amazonProductCheckout -->
+  </suite> <!-- Gmail Suite -->
+</testng-results>

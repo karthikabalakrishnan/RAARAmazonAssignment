@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" name="Gmail Suite">
+	<parameter name="Browser" value="Android" />
+	<parameter name="deviceName" value="Honor 6X" />
+	<listeners>
+		<listener class-name="com.amazon.common.Listeners" />
+	</listeners>
+	<test name="amazonProductCheckout">
+		<classes>
+			<class name="com.amazon.test.ProductCheckout" />
+		</classes>
+	</test>
+</suite>

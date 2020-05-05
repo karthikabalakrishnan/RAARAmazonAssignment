@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [WebTest]" parallel="tests">
+  <parameter name="Browser" value="chrome"/>
+  <test name="WebApp(failed)" parallel="tests">
+    <classes>
+      <class name="test.ProductCheckout">
+        <methods>
+          <include name="teardown"/>
+          <include name="searchTest"/>
+          <include name="endTest"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- test.ProductCheckout -->
+    </classes>
+  </test> <!-- WebApp(failed) -->
+</suite> <!-- Failed suite [WebTest] -->
